@@ -40,7 +40,10 @@ public class PhanSo {
         int uCLN = uocChungLN(tu, mau);
         tu /= uCLN;
         mau /= uCLN;
-
+        if (mau < 0) {
+            tu = -tu;
+            mau = -mau;
+        }
     }
 
     int uocChungLN(int tu, int mau) {
