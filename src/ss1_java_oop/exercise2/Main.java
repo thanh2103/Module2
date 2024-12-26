@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Tích của 2 phân số: ");
         tich.Output();
 
-        PhanSo thuong = phanso1.nhan(phanso2);
+        PhanSo thuong = phanso1.thuong(phanso2);
         System.out.println("Thương của 2 phân số: ");
         thuong.Output();
 

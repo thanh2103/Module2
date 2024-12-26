@@ -17,7 +17,7 @@ public class PhanSo {
     public void Input() {
         do {
             Scanner in = new Scanner(System.in);
-            System.out.println("Nhập tử");
+            System.out.println("Nhập tử: ");
             tu = in.nextInt();
             System.out.println("Nhập mẫu: ");
             mau = in.nextInt();
