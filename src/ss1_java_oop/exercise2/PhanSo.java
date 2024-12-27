@@ -50,12 +50,22 @@ public class PhanSo {
         if (tu == 0 || mau == 0) {
             return 1;
         }
-        while (mau != 0) {
-            int du = tu % mau;
-            tu = mau;
-            mau = du;
+        tu = Math.abs(tu);
+        mau = Math.abs(mau);
+
+        int min = Math.min(tu, mau);
+        int max = Math.max(tu, mau);
+
+        if (max % min == 0) {
+            return min;
         }
-        return Math.abs(tu);
+
+        for (int i = min / 2; i >= 1; i--) {
+            if (tu % i == 0 && mau % i == 0) {
+                return i;
+            }
+        }
+        return 1;
     }
 
     public PhanSo cong(PhanSo ps) {
