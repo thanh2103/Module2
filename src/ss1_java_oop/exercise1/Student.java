@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class Student {
     String name;
-    double diemToan, diemVan;
+    double diemToan;
+    double diemVan;
 
 
-    void Input() {
+    void inPut() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Nhập name: ");
@@ -28,6 +29,6 @@ public class Student {
         System.out.println("Tên:" + name);
         System.out.println("Điểm toán:" + diemToan);
         System.out.println("Điểm văn:" + diemVan);
-        System.out.println("Điểm trung bình: "+diemTrungBing());
+        System.out.println("Điểm trung bình: " + diemTrungBing());
     }
 }

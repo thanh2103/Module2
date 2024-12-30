@@ -36,6 +36,6 @@ public class ThoiGian {
     }
 
     void outPut(){
-        System.out.printf("%d:%02d:%02d", hour, minute, second);
+        System.out.printf("%02d:%02d:%02d", hour, minute, second);
     }
 }

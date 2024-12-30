@@ -14,17 +14,20 @@ public class PhanSo {
         this.mau = mau;
     }
 
-    public void Input() {
+    public void inPut() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Nhập tử: ");
+        tu = in.nextInt();
         do {
-            Scanner in = new Scanner(System.in);
-            System.out.println("Nhập tử: ");
-            tu = in.nextInt();
             System.out.println("Nhập mẫu: ");
             mau = in.nextInt();
+            if(mau==0){
+                System.out.println("Nhập mẫu khác 0");
+            }
         } while (mau == 0);
     }
 
-    public void Output() {
+    public void outPut() {
         rutGon();
         if (tu == 1 && mau == 1) {
             System.out.println(mau);
@@ -67,6 +70,8 @@ public class PhanSo {
         }
         return 1;
     }
+
+
 
     public PhanSo cong(PhanSo ps) {
         PhanSo tong = new PhanSo();
