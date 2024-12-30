@@ -14,5 +14,5 @@ public class Main {
         System.out.printf("%.1f - %.1f = %.1f\n", a, b, MathUtil.sub(a, b));
         System.out.printf("%.1f x %.1f = %.1f\n", a, b, MathUtil.mul(a, b));
         System.out.printf("%.1f / %.1f = %.1f\n", a, b, MathUtil.div(a, b));
-    }
+    }//
 }
