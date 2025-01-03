@@ -2,13 +2,14 @@ package ss4_kethua.exercise1;
 
 import java.util.Scanner;
 
-public class Phone {
+public abstract class Phone{
     private String id;
     private String ten;
     private int gia;
     private int thoiGianBaoHanh;
     private String hang;
 
+    public abstract double tinhTongTien();
     public Phone() {
     }
 

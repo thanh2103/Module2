@@ -2,7 +2,7 @@ package ss4_kethua.exercise1;
 
 import java.util.Scanner;
 
-public class NewPhone extends Phone {
+public class NewPhone extends Phone{
     String id;
     private int soLuong;
     private String idNewPhone="DTM";
@@ -38,5 +38,10 @@ public class NewPhone extends Phone {
 
     public void setSoLuong(int soLuong) {
         this.soLuong = soLuong;
+    }
+
+    @Override
+    public double tinhTongTien() {
+        return getSoLuong()*getGia();
     }
 }
