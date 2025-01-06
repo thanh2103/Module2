@@ -1,0 +1,78 @@
+*ghi chú: 
+- tên biến nằm bên stack 
+- object nằm bên heap
+
+* arrlist có 3 contructor
+- new arrlist();
+- new arrlist(collection);
+- new arrlist(int capacity);
+
+* khi nào sử dụng abstract class khi nào dùng interface?
+- khi muốn hưởng full hàng động thì dùng interface
+- hướng đến dữ liệu thì dùng abtract
+- nếu không dùng abtract thì 100 đối tượng đều dùng cùng dữ liệu 
+
+* phân biệt arraylist và linkedlist trong conllection:
+- arrlist: phù hợp cho get 
+là một mảng gồm nhiều địa chỉ liên tiếp nhau
+lấy địa chỉ đầu tiên làm đại diện, get tại vị trí k nào thì cộng thêm k vào để đến địa chỉ đó
+
+- linkedlist: phù hợp để thêm và xóa
+bao gồm: giá trị và node
+head ở vị trí đầu tiên và duyệt qua tất cả địa chỉ để đến địa chỉ cần get
+
+*list là cha nên thường không sử dụng arrl mà dùng list
+
+*arrl và vector
+
+*stack và queue
+stack: FILO 
+queue: FIFO
+
+*<interger> tại sao phải có genaric?
+- bắt lỗi tại thười điểm Compiler
+- dễ thao tác 
+
+*Hãy phân biết list và set?
+set: không cho các phần tử trùng nhau, là interface nên k thể new 
+list: được trùng 
+
+
+*cần triển khai lại equals và hashcode vd khi new ra nhiều student thì xác định các student có chung id là 1 object
+
+*so sánh equals và hashcode 
+1. hashcode: là một gtri nguyên được tính tán từ dữ liệu đầu vào
+đặc điểm: 
++ với 1 đầu vào cố định, mã băm phải giống nhau 
++ 2 đối tượng khác nhau có thể cùng mã băm 
+2. HashSet
+-các phần tử trong hashset không có thứ tự cụ thwr 
+-thêm, xóa, và lấy phần tử nhanh 
+-mỗi bucket là một linkedlist để lưu trữ các phần tử dực trên mã băm 
+-initialCapacity: 16( sức chứ ban đầu)
+- hệ số đầy: 0.75
+-cơ chế hoạt động:trong hashset có nhiều bucket, hashcode sẽ xác định 1 số rồi % 16=7[0-15]=item, sẽ tương ứng với từng buckets,
+nếu có 1 số nữa %16=7 thì equals sẽ so sánh 2 số có giống nhau hay k 
+
+16*0.75=12 nếu vượt quá 12 phân tử thì tạo ra 32 buckets
+
+* so sánh Hashset và LinkedHashset
+Hashset: không duy trì thứ tự thêm vào 
+LinkedHashset: duy trì
+
+COLLECTION
+1. Ưu điểm
+- Tối ưu hóa vùng dữ liệu 
+- 
+2. Khái niệm:
+3. Vì sao student được gọi là object? 
+- vì student là con của object 
+4. So sánh array và arraylist?
+- Trả lời: 
++ Mảng (Array) là một cấu trúc dữ liệu có kích thước cố định
+ trong khi ArrayList là một lớp Collection có thể thay đổi được kích thước
+(Arraylist: vì nó là một mảng động, cơ chế hoạt động: ẩn bên dưới 1 arrlist là 1 arr tuy nhiên hổ trợ thêm 
+phương thức thêm, xóa, sửa, kiểu dữ liệu là object, để tăng kích thước thì tăng thêm lên 
+50% kích thước của mảng bên đầu)
++ 
+

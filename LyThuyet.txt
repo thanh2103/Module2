@@ -1,0 +1,12 @@
+mục đích của đa hình: gom các đối tượng con
+
+final có 3 trường hợp sử dụng: 
++ đi với biến
++ đi với phương thức: không cho class con triển khai
++ đi với class: không thể extands
+
+java 8: 
++ defaul đc kế thừa 
++ static không được
+
+
