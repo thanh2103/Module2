@@ -12,7 +12,7 @@
 - hướng đến dữ liệu thì dùng abtract
 - nếu không dùng abtract thì 100 đối tượng đều dùng cùng dữ liệu 
 
-* phân biệt arraylist và linkedlist trong conllection:
+* phân biệt arraylist và linkedlist trong conllection:<các phần tử trong arr liên tục nhau trong bộ nhớ>
 - arrlist: phù hợp cho get 
 là một mảng gồm nhiều địa chỉ liên tiếp nhau
 lấy địa chỉ đầu tiên làm đại diện, get tại vị trí k nào thì cộng thêm k vào để đến địa chỉ đó
@@ -26,12 +26,21 @@ head ở vị trí đầu tiên và duyệt qua tất cả địa chỉ để đ
 *arrl và vector
 
 *stack và queue
-stack: FILO 
+stack: FILO
 queue: FIFO
 
 *<interger> tại sao phải có genaric?
-- bắt lỗi tại thười điểm Compiler
-- dễ thao tác 
+1.
+- cho phép các class hoạt động với nhiều kiểu dữ liệu khác nhau
+
+vd: trong tính tổng nếu k có genaric thì có thể truyền vào nhiều kiểu dữ liệu, việc tính tổng phải chuyển qua 
+cùng kiểu dữ liệu mới thực hiện được.
+không có genaric: 
+- nếu không có thì phải tạo ra nhiều hàm với nhiều kiểu dữ liệu khác nhau.
+2.ưu điểm:
+- bắt lỗi tại thời điểm Compiler
+- không cần phải thao tác
+-xây dựng cá thuật toán tổng quát, tái sử dụng mã nguồn 
 
 *Hãy phân biết list và set?
 set: không cho các phần tử trùng nhau, là interface nên k thể new 
@@ -46,7 +55,7 @@ list: được trùng
 + với 1 đầu vào cố định, mã băm phải giống nhau 
 + 2 đối tượng khác nhau có thể cùng mã băm 
 2. HashSet
--các phần tử trong hashset không có thứ tự cụ thwr 
+-các phần tử trong hashset không có thứ tự cụ thể
 -thêm, xóa, và lấy phần tử nhanh 
 -mỗi bucket là một linkedlist để lưu trữ các phần tử dực trên mã băm 
 -initialCapacity: 16( sức chứ ban đầu)
@@ -60,6 +69,8 @@ nếu có 1 số nữa %16=7 thì equals sẽ so sánh 2 số có giống nhau h
 Hashset: không duy trì thứ tự thêm vào 
 LinkedHashset: duy trì
 
+
+*map được sử dụng khi: từ điển, đếm số ký tự xuất hiện trong chuỗi
 COLLECTION
 1. Ưu điểm
 - Tối ưu hóa vùng dữ liệu 

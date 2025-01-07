@@ -2,7 +2,7 @@ package ss4_kethua.exercise1;
 
 import java.util.Scanner;
 
-public abstract class Phone{
+public abstract class Phone implements Comparable<Phone>{
     private String id;
     private String ten;
     private int gia;
@@ -19,6 +19,11 @@ public abstract class Phone{
         this.gia = gia;
         this.thoiGianBaoHanh = thoiGianBaoHanh;
         this.hang = hang;
+    }
+
+    @Override
+    public int compareTo(Phone o) {
+        return Double.compare(this.gia, o.getGia());
     }
 
     public void input(String id){
